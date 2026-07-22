@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vitrine Digital - ObamaTech</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitrine Digital - ObamaTech</title>
+  
+  <!-- ATENÇÃO: Se o style.css estiver na mesma pasta do index.html, use href="style.css". 
+       Se estiver numa pasta chamada 'css', mantenha href="css/style.css" -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Fonte moderna (Inter) importada do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-<div class="container">
-<h1 id="logo">Obama<span>Tech</span></h1>
-<nav>
-<ul>
-<li><a href="#">Início</a></li>
-<li><a href="#">Cursos</a></li>
-<li><a href="#">Ebooks</a></li>
-<li><a href="#">Contato</a></li>
-</ul>
-</nav>
-</div>
-</header>
+  <header>
+    <div class="container">
+      <h1 id="logo">Obama<span>Tech</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Ebooks</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<main class="container">
-<section class="hero">
-<h2>Aprenda as tecnologias do futuro.</h2>
-<p>Explore nossos produtos digitais exclusivos e impulsione sua carreira.</p>
-</section>
+  <main class="container">
+    <section class="hero">
+      <span class="hero-badge">🚀 Plataforma EAD & Produtos Digitais</span>
+      <h2>Aprenda as tecnologias do futuro</h2>
+      <p>Explore nossos cursos e ebooks exclusivos para evoluir sua carreira na programação.</p>
+    </section>
 
-<section class="products">
-<div class="product-grid" id="product-grid">
-</div>
-</section>
-</main>
+    <section class="products">
+      <div class="product-grid" id="product-grid">
+        <!-- Os cartões de produtos serão carregados pelo JS -->
+      </div>
+    </section>
+  </main>
 
-<footer>
-<div class="container">
-<p>&copy; 2026 ObamaTech Digital Ltda. Todos os direitos reservados.</p>
-</div>
-</footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 ObamaTech Digital Ltda. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-<script src="js/script.js"></script>
+  <!-- Widget VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <!-- ATENÇÃO: Mesmo aviso para o JS. Se estiver na raiz use src="script.js", se estiver na pasta 'js' use src="js/script.js" -->
+  <script src="js/script.js"></script>
 </body>
 </html>
-Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga.Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga.
